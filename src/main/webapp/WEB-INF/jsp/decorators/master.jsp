@@ -13,7 +13,7 @@
 <div id="container">
 
     <div id="header">
-        <h1> This is common header! </h1>
+        <h1>Common header </h1>
     </div>
     <div id="content">
         <decorator:body/>

@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HelloWorldController {
 
-    /**
-     * Simply serves hello.jsp
-     * @return view with name 'hello'
-     */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String handleRequest() {
         return "hello";

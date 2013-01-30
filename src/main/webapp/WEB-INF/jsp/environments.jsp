@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <body>
-    <h4>test</h4>
+    <h4>environments.jsp</h4>
         <div id="content">
             <fmt:message key="index.property_message"/>
         </div>

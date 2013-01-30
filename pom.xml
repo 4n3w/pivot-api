@@ -7,9 +7,10 @@
     <artifactId>pivot-api</artifactId>
     <packaging>war</packaging>
     <version>1.0.0-SNAPSHOT</version>
+    <description>jettison configuration!</description>
 
     <properties>
-        <buildNumber>my-buildnumber-changeme</buildNumber>
+        <buildNumber>jettison</buildNumber>
         <jetty.version>6.1.4</jetty.version>
         <hibernate.version>3.5.1-Final</hibernate.version>
         <spring.version>3.0.3.RELEASE</spring.version>
@@ -33,7 +34,6 @@
     </repositories>
 
     <dependencies>
-        <!-- SPRING DEPENDENCIES -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
@@ -53,14 +53,12 @@
             <scope>test</scope>
         </dependency>
 
-        <!--Web tier-->
         <dependency>
             <groupId>opensymphony</groupId>
             <artifactId>sitemesh</artifactId>
             <version>2.4.2</version>
         </dependency>
 
-        <!--Misc dependencies-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -69,10 +67,15 @@
         </dependency>
 
         <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor_2.10</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -89,7 +92,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- HIBERNATE DEPENDENCIES -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
@@ -111,7 +113,6 @@
             <version>${commons-dbcp.version}</version>
         </dependency>
 
-        <!-- LOGGING DEPENDENCIES - LOG4J -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
@@ -157,20 +158,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.1.1</version>
-                <executions>
-                    <execution>
-                        <id>prepare-war</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>exploded</goal>
-                        </goals>
-                    </execution>
-                </executions>
                 <configuration>
                     <useCache>true</useCache>
                     <!-- needed to play nice with the replacer plugin -->
                     <archive>
-                        <manifest></manifest>
+                        <manifest>
+                        </manifest>
                         <manifestEntries>
                             <!-- You can ignore the ${buildNumber} warning, it's provided at compile-time by the buildnumber plugin -->
                             <Implementation-Build>${buildNumber}</Implementation-Build>
