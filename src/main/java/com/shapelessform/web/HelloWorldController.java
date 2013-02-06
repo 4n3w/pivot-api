@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Simple index page controller serving hello.jsp file 
  */
-@Controller
+//@Controller
 public class HelloWorldController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String handleRequest() {
-        return "hello";
-    }
-
-    @RequestMapping(value = "environments", method = RequestMethod.GET)
-    public String handleEnvironmentsRequest(){
-        return "environments";
-    }
+//    @RequestMapping(value = "/", method = RequestMethod.GET)
+//    public String handleRequest() {
+//        return "hello";
+//    }
+//
+//    @RequestMapping(value = "environments", method = RequestMethod.GET)
+//    public String handleEnvironmentsRequest(){
+//        return "environments";
+//    }
 
 }
