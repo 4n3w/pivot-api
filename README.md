@@ -76,17 +76,17 @@ Returns:
 
 
 
-	* TODO: GETs for above
-	* TODO: DELETEs for above
-	* TODO: PUTs for above
-	* TODO: POSTs for above
-	* TODO: Searching in a RESTful manner.
-	* TODO: Design/storm common search patterns (ex. all appX in UAT, or all configuration elements matching pattern "db.name")
-	* TODO: Backend agnostic? (LDAP, PostgreSQL, MySQL, Neo4J, Spring-data?)
-	* TODO: Support COPY between elements (I want to copy appX's configuration in DEV to QA, and then do an update on the resultant COPY in qa/)
-	* TODO: Spring App wakes up, sends message to Pivoteer
-	* TODO: MimeType for properties?
-	* TODO: Target individual bean configurations!
+* TODO: GETs for above
+* TODO: DELETEs for above
+* TODO: PUTs for above
+* TODO: POSTs for above
+* TODO: Searching in a RESTful manner.
+* TODO: Design/storm common search patterns (ex. all appX in UAT, or all configuration elements matching pattern "db.name")
+* TODO: Backend agnostic? (LDAP, PostgreSQL, MySQL, Neo4J, Spring-data?)
+* TODO: Support COPY between elements (I want to copy appX's configuration in DEV to QA, and then do an update on the resultant COPY in qa/)
+* TODO: Spring App wakes up, sends message to Pivoteer
+* TODO: MimeType for properties?
+* TODO: Target individual bean configurations!
 
 
 ## 1.0:
@@ -109,12 +109,13 @@ Returns:
      ----------   -------
 
 Pivot API
-	- Spring MVC
-	- Reasonably REST
-	- Simple.
-	- JSON/.properties/no xml (yet?).
-	- Constructs URLs containing .properties {}
-	- Allows for simple adpotion of pivot-api in apps to simply retrieve and store configuration at startup
+
+* Spring MVC
+* Reasonably REST
+* Simple.
+* JSON/.properties/no xml (yet?).
+* Constructs URLs containing .properties {}
+* Allows for simple adpotion of pivot-api in apps to simply retrieve and store configuration at startup
 
 Pivot AMQP?
 	- Spring HTTP Client
